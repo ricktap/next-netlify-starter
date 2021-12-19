@@ -14,8 +14,22 @@ export default function Home() {
         <Header title="Welcome to my app!" />
         <p className="description">
           Get started by editing <code>pages/index.js</code>
-          This is a first try!
         </p>
+        <h2>Shoot me a message!</h2>
+        <form name="contact" netlify="true">
+          <p>
+            <label>Name <input type="text" name="name" /></label>
+          </p>
+          <p>
+            <label>Email <input type="email" name="email" /></label>
+          </p>
+          <p>
+            <label><textarea name="message" /></label>
+          </p>
+          <p>
+            <button type="submit">Send</button>
+          </p>
+        </form>
       </main>
 
       <Footer />
